@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+requests
+beautifulsoup4
+lxml
+pymupdf
+chromadb
+rank_bm25
+langdetect
+openai
+python-dotenv

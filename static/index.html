@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>THD Knowledge Assistant</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="logo">THD</div>
+      <div>
+        <div class="brand-title">Knowledge Assistant</div>
+        <div class="brand-sub">Deggendorf Institute of Technology</div>
+      </div>
+    </div>
+    <button id="newChat" class="new-chat">+ New chat</button>
+
+    <div class="history-title">Recent chats</div>
+    <nav id="history" class="history"></nav>
+
+    <p class="disclaimer">Unofficial student prototype. Always verify deadlines, fees and eligibility on the official THD website.</p>
+  </aside>
+
+  <main class="chat">
+    <div id="messages" class="messages">
+      <div id="welcome" class="welcome">
+        <h1>Hi! 👋 How can I help you today?</h1>
+        <p>Ask anything about studying at THD – programmes, applications, campuses, international students and more.</p>
+        <div class="suggestions">
+          <button>How do I apply for a master's programme?</button>
+          <button>Which degree programmes are taught in English?</button>
+          <button>What do international students need for a visa?</button>
+          <button>Tell me about the Campus Cham.</button>
+          <button>How can I contact the Welcome Centre?</button>
+          <button>What scholarships or funding are available?</button>
+        </div>
+      </div>
+    </div>
+
+    <form id="composer" class="composer">
+      <textarea id="input" rows="1" placeholder="Ask a question about THD…" autocomplete="off"></textarea>
+      <button id="send" type="submit" title="Send">➤</button>
+    </form>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
